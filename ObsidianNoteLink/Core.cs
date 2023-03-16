@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
+
 namespace ObsidianNoteLink;
 
 public class Core
@@ -10,8 +11,8 @@ public class Core
     static void Main(string[] args)
     {
         
-        string sourcePath = @"C:\Users\SalboPC\Documents\Godot Games";
-        string destinationPath = @"C:\Users\SalboPC\Documents\dev\DevNotes";
+        string sourcePath = StringConst.sourcePath;
+        string destinationPath = StringConst.destinationPath;
         
         var csFiles = Directory.GetFiles(sourcePath, "*.cs", SearchOption.AllDirectories);
         
